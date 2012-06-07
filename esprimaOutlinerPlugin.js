@@ -239,12 +239,12 @@ window.onload = function() {
 	
 	var provider = new eclipse.PluginProvider();
 	provider.registerServiceProvider("orion.edit.outliner", outlineASTService, {
-		contentType: ["text.javascript"],
+		contentType: ["application/javascript"],
 		name: "Esprima AST view",
 		id: "orion.edit.outliner.esprimaAST"
 	});
 	provider.registerServiceProvider("orion.edit.outliner", outlineService, {
-	    contentType: ["text.javascript"],
+	    contentType: ["application/javascript"],
 	    name: "Esprima Outline",
 	    id: "orion.edit.outliner.esprima"
     });
